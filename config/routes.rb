@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # resources :students
-  resources :students, only: :index
+  # resources :students, only: :index
+  get 'students', to: 'students#index'
   get 'students/:id', to: 'students#show'
   # get '/:id/activate' to: 'students#show' as: 'false'
 
